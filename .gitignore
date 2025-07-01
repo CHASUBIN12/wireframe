@@ -1,0 +1,35 @@
+# Node
+node_modules/
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.pyc
+
+# Mac
+Icon?
+
+# Windows
+*.exe
+*.dll
+*.pdb
+*.db
+*.log
+
+# Others
+.env
+*.env
+*.bak
+*.tmp
+*.swp
+.idea/
+*.sublime-workspace
+*.sublime-project

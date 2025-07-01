@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+    padding: 0 32px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* 공통 박스 스타일 */
+.title,
+.text,
+.card,
+.section-title,
+.subtext,
+.col>div {
+    background: #ccc;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+.logo {
+    font-size: 30px;
+    border: 2px solid white;
+    width: 160px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu,
+.nav {
+    font-size: 14px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+}
+
+.main-image {
+    background: #aaa;
+    height: 300px;
+}
+
+.side-titles div {
+    background: #ccc;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Section */
+.section-title {
+    font-size: 24px;
+}
+
+.full-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cards.large {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    background: #999;
+    padding: 10px;
+}
+
+.card .image {
+    background: #bbb;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.card.tall .image {
+    height: 200px;
+}
+
+.card.small .image {
+    height: 100px;
+}
+
+/* Info Section */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-box {
+    background: #ccc;
+    width: 200px;
+    height: 200px;
+}
+
+.info-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.three-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.three-boxes>div {
+    background: #aaa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: #111;
+    padding: 20px;
+}
+
+.footer .col>div {
+    margin-bottom: 8px;
+}

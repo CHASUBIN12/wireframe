@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+    <link rel="stylesheet" href="css/wireframe.css">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 900px) {
+
+            .cards,
+            .cards.large,
+            .footer,
+            .three-boxes {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .container {
+                padding: 2vw 2vw;
+            }
+
+            .header {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .cards,
+            .cards.large,
+            .footer,
+            .three-boxes {
+                grid-template-columns: 1fr !important;
+            }
+
+            .header {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .container {
+                padding: 1vw 1vw;
+            }
+
+            .side-titles {
+                flex-direction: row;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">SeMA</div>
+            </div>
+            <div class="header-center">
+                <div class="title">Title</div>
+                <!-- <div class="text">Text</div> -->
+            </div>
+            <div class="header-right">
+                <div class="nav">Text Text Text Text</div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="side-titles">
+                <div>Title</div>
+                <div>Title</div>
+                <div>Title</div>
+                <div>Title</div>
+                <div>Title</div>
+            </div>
+            <div class="main-image">Image</div>
+        </section>
+
+        <!-- Section: Featured -->
+        <section class="section">
+            <div class="section-title">Title</div>
+        </section>
+
+        <!-- Section: Wide Title -->
+        <section class="section full-title">
+            <div>Title</div>
+            <div class="subtext">Text</div>
+        </section>
+
+        <!-- Section: Cards Grid -->
+        <section class="cards">
+            <div class="card tall">
+                <div class="image">Image</div>
+                <div class="title">Title</div>
+                <div class="text">Text</div>
+            </div>
+            <div class="card">
+                <div class="image">Image</div>
+                <div class="title">Title</div>
+                <div class="text">Text</div>
+            </div>
+            <div class="card">
+                <div class="image">Image</div>
+                <div class="title">Title</div>
+                <div class="text">Text</div>
+            </div>
+            <div class="card">
+                <div class="image">Image</div>
+                <div class="title">Title</div>
+                <div class="text">Text</div>
+            </div>
+        </section>
+
+        <!-- Section: Large Cards -->
+        <section class="cards large">
+            <div class="card">
+                <div class="image">Image</div>
+                <div class="title">Title</div>
+                <div class="text">Text</div>
+            </div>
+            <div class="card">
+                <div class="image">Image</div>
+                <div class="title">Title</div>
+                <div class="text">Text</div>
+            </div>
+            <div class="card">
+                <div class="image">Image</div>
+                <div class="title">Title</div>
+                <div class="text">Text</div>
+            </div>
+            <div class="card small">
+                <div class="image">Image</div>
+                <div class="title">Title</div>
+                <div class="text">Text</div>
+            </div>
+        </section>
+
+        <!-- Section: Info -->
+        <section class="info">
+            <div class="section-title">Title</div>
+            <div class="subtext">Text</div>
+            <div class="image-box">Image</div>
+            <div class="info-texts">
+                <div><strong>Title</strong><br>Text</div>
+                <div><strong>Title</strong><br>Text</div>
+                <div><strong>Title</strong><br>Text</div>
+                <div><strong>Title</strong><br>Text</div>
+            </div>
+        </section>
+
+        <!-- Section: Boxes -->
+        <section class="three-boxes">
+            <div>Text</div>
+            <div>Text</div>
+            <div>Text</div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="col">
+                <div>Title</div>
+                <div>Text</div>
+            </div>
+            <div class="col">
+                <div>Title</div>
+                <div>Title</div>
+            </div>
+            <div class="col">
+                <div>Title</div>
+                <div>Text</div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

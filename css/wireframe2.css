@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+    padding: 0 32px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* 공통 박스 스타일 */
+.title,
+.text,
+.card,
+.section-title,
+.subtext,
+.col>div {
+    background: #ccc;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e0e6ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 60px 0 60px;
+    box-sizing: border-box;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.logo-top {
+    width: 48px;
+    height: 28px;
+    background: #c7d1dd;
+    border-radius: 50px 50px 30px 30px / 40px 40px 20px 20px;
+    margin-bottom: 6px;
+}
+
+.logo-bottom {
+    width: 36px;
+    height: 14px;
+    background: #c7d1dd;
+    border-radius: 20px;
+}
+
+.logo-text {
+    color: #5a6a7a;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #5a6a7a;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn-outline {
+    color: #5a6a7a;
+    border: 2px solid #5a6a7a;
+    background: #fff;
+    border-radius: 32px;
+    padding: 14px 36px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-left: 32px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+    background: #e0e6ed;
+}
+
+.btn-filled {
+    color: #fff;
+    background: #5a6a7a;
+    border-radius: 32px;
+    padding: 14px 36px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-left: 16px;
+    border: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn-filled:hover {
+    background: #3d4e5a;
+}
+
+.menu,
+.nav {
+    font-size: 14px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+}
+
+.main-image {
+    background: #aaa;
+    height: 300px;
+}
+
+.side-titles div {
+    background: #ccc;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Section */
+.section-title {
+    font-size: 24px;
+}
+
+.full-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cards.large {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    background: #999;
+    padding: 10px;
+}
+
+.card .image {
+    background: #bbb;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.card.tall .image {
+    height: 200px;
+}
+
+.card.small .image {
+    height: 100px;
+}
+
+/* Info Section */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-box {
+    background: #ccc;
+    width: 200px;
+    height: 200px;
+}
+
+.info-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.three-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.three-boxes>div {
+    background: #aaa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: #111;
+    padding: 20px;
+}
+
+.footer .col>div {
+    margin-bottom: 8px;
+}
