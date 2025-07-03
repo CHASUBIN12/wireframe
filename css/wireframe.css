@@ -152,3 +152,33 @@ body {
 .footer .col>div {
     margin-bottom: 8px;
 }
+
+.popup {
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    z-index: 99999999;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, .5);
+    line-height: 1.75;
+}
+
+button {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+.popup p {
+    color: #111;
+}
